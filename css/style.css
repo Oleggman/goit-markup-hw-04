@@ -15,6 +15,7 @@
   --main-portfolio-filter-bg-cl: #f4f4fd;
   --accent-portfolio-filter-bg-cl: #404bbf;
   --socials-bg-color: #4d5ae5;
+  --customers-color: #afb1b8;
   /* Others */
   --indent: 24px;
   --items: 4;
@@ -235,8 +236,14 @@ img {
   height: 112px;
   justify-content: center;
   align-items: center;
-  background-color: var(--cloud-color);
   border-radius: 4px;
+
+  color: var(--secondary-color);
+  background-color: var(--cloud-color);
+}
+
+.feature-icon {
+  color: currentColor;
 }
 
 .item-title {
@@ -322,6 +329,35 @@ img {
 }
 
 .team .socials-icon {
+  fill: currentColor;
+}
+
+/**
+  |============================
+  | Customers
+  |============================
+*/
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--indent);
+}
+
+.customers-list-item {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-list-link {
+  width: 168px;
+  height: 88px;
+  display: flex;
+  padding: 16px 32px;
+  color: var(--customers-color);
+}
+
+.customers-list-icon {
   fill: currentColor;
 }
 
