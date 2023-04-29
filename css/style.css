@@ -14,6 +14,7 @@
   --main-portfolio-filter-cl: #4d5ae5;
   --main-portfolio-filter-bg-cl: #f4f4fd;
   --accent-portfolio-filter-bg-cl: #404bbf;
+  --socials-bg-color: #4d5ae5;
   /* Others */
   --indent: 24px;
   --items: 4;
@@ -89,8 +90,8 @@ img {
   letter-spacing: 0.04em;
 }
 
-.link:hover:not(.portfolio .link),
-.link:focus:not(.portfolio .link) {
+.link:hover:not(.portfolio .link, .team .socials-link),
+.link:focus:not(.portfolio .link, .team .socials-link) {
   color: var(--main-color-hover);
 }
 
@@ -293,6 +294,35 @@ img {
 .team .description {
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.team .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.team .socials-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  color: var(--cloud-color);
+  background-color: var(--socials-bg-color);
+}
+
+.team .socials-link:hover,
+.team .socials-link:focus {
+  background-color: var(--main-color-hover);
+}
+
+.team .socials-icon {
+  fill: currentColor;
 }
 
 /**
