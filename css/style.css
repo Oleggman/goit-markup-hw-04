@@ -228,6 +228,16 @@ img {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
+.features .thumb {
+  display: flex;
+  margin-bottom: 8px;
+  height: 112px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cloud-color);
+  border-radius: 4px;
+}
+
 .item-title {
   margin-bottom: 8px;
 }
