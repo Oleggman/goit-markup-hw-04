@@ -16,6 +16,7 @@
   --accent-portfolio-filter-bg-cl: #404bbf;
   --socials-bg-color: #4d5ae5;
   --customers-color: #afb1b8;
+  --footer-accent-color: #31d0aa;
   /* Others */
   --indent: 24px;
   --items: 4;
@@ -91,8 +92,8 @@ img {
   letter-spacing: 0.04em;
 }
 
-.link:hover:not(.portfolio .link, .team .socials-link),
-.link:focus:not(.portfolio .link, .team .socials-link) {
+.link:hover:not(.portfolio .link, .socials-link),
+.link:focus:not(.portfolio .link, .socials-link) {
   color: var(--main-color-hover);
 }
 
@@ -304,14 +305,14 @@ img {
   margin-bottom: 8px;
 }
 
-.team .socials {
+.socials {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
 
-.team .socials-link {
+.socials-link {
   width: 40px;
   height: 40px;
   display: flex;
@@ -328,7 +329,7 @@ img {
   background-color: var(--main-color-hover);
 }
 
-.team .socials-icon {
+.socials-icon {
   fill: currentColor;
 }
 
@@ -373,6 +374,12 @@ img {
   background-color: var(--secondary-color);
 }
 
+.footer > .container {
+  display: flex;
+  align-items: flex-start;
+  gap: 120px;
+}
+
 .footer .site-logo {
   margin-bottom: 16px;
 }
@@ -383,6 +390,20 @@ img {
 
 .footer-desc {
   width: 264px;
+}
+
+.footer-socials-title {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.footer .socials {
+  gap: 16px;
+}
+
+.footer .socials-link:hover,
+.footer .socials-link:focus {
+  background-color: var(--footer-accent-color);
 }
 
 /**
